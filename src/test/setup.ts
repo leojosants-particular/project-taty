@@ -7,13 +7,13 @@ afterEach(() => {
 })
 
 // Mock IntersectionObserver for jsdom (used by motion/react whileInView)
-globalThis.IntersectionObserver = class IntersectionObserver {
-  constructor(_callback: IntersectionObserverCallback, _options?: IntersectionObserverInit) {}
+class MockIntersectionObserver {
   observe() {}
   unobserve() {}
   disconnect() {}
-  readonly root = null
-  readonly rootMargin = ""
-  readonly thresholds = []
-  takeRecords(): IntersectionObserverEntry[] { return [] }
+  takeRecords() {
+    return []
+  }
 }
+globalThis.IntersectionObserver =
+  MockIntersectionObserver as unknown as typeof IntersectionObserver

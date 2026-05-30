@@ -1,4 +1,4 @@
-import { Instagram } from "lucide-react"
+import { InstagramIcon } from "@/components/shared/InstagramIcon"
 import { site } from "@/content/site"
 
 export function Footer() {
@@ -12,7 +12,7 @@ export function Footer() {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 hover:text-primary"
         >
-          <Instagram className="size-4" aria-hidden="true" />
+          <InstagramIcon className="size-4" />
           {site.instagram.handle}
         </a>
         <p>© {new Date().getFullYear()} {site.brandName}. Feito com carinho.</p>
