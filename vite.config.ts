@@ -5,7 +5,9 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ command }) => ({
+  // GitHub Pages de projeto serve em /<repo>/ — base só no build de produção.
+  base: command === 'build' ? '/project-taty/' : '/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
@@ -20,4 +22,4 @@ export default defineConfig({
     // Playwright owns e2e/; keep Vitest to unit/integration under src/
     exclude: ['**/node_modules/**', '**/dist/**', 'e2e/**'],
   },
-})
+}))

@@ -1,6 +1,7 @@
 import { motion } from "motion/react"
 import { Sparkles } from "lucide-react"
 import { WhatsAppButton } from "@/components/shared/WhatsAppButton"
+import { asset } from "@/lib/asset"
 import { site } from "@/content/site"
 
 export function Hero() {
@@ -23,7 +24,7 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.05 }}
         >
           <img
-            src="/logo/logo-wordmark.svg"
+            src={asset("/logo/logo-wordmark.svg")}
             alt={site.brandName}
             className="mx-auto h-auto w-80 sm:w-lg"
           />

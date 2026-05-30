@@ -2,6 +2,7 @@ import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetClose } from "@/components/ui/sheet"
 import { WhatsAppButton } from "@/components/shared/WhatsAppButton"
+import { asset } from "@/lib/asset"
 import { site } from "@/content/site"
 
 const NAV = [
@@ -17,7 +18,7 @@ export function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-2">
         <a href="#inicio" aria-label={site.brandName}>
           <img
-            src="/logo/logo-wordmark-compact.svg"
+            src={asset("/logo/logo-wordmark-compact.svg")}
             alt={site.brandName}
             className="h-20 w-auto sm:h-24"
           />
@@ -46,7 +47,7 @@ export function Header() {
           <SheetContent side="right" className="w-72 p-6">
             <SheetTitle className="pr-8">
               <img
-                src="/logo/logo-wordmark-compact.svg"
+                src={asset("/logo/logo-wordmark-compact.svg")}
                 alt={site.brandName}
                 className="h-20 w-auto"
               />

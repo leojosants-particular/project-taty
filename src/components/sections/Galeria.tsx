@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { motion } from "motion/react"
 import { SectionTitle } from "@/components/shared/SectionTitle"
+import { asset } from "@/lib/asset"
 import { gallery } from "@/content/gallery"
 import type { GalleryCategory } from "@/content/types"
 
@@ -45,7 +46,7 @@ export function Galeria() {
             className="overflow-hidden rounded-2xl bg-muted"
           >
             <img
-              src={item.src}
+              src={asset(item.src)}
               alt={item.alt}
               loading="lazy"
               className="aspect-square size-full object-cover"

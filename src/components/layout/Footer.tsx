@@ -1,4 +1,5 @@
 import { InstagramIcon } from "@/components/shared/InstagramIcon"
+import { asset } from "@/lib/asset"
 import { site } from "@/content/site"
 import { developer } from "@/content/credits"
 
@@ -7,7 +8,7 @@ export function Footer() {
     <footer className="border-t border-border bg-muted/40">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-8 text-center text-sm text-muted-foreground md:flex-row md:justify-between md:gap-6 md:text-left">
         <img
-          src="/logo/logo-wordmark-compact.svg"
+          src={asset("/logo/logo-wordmark-compact.svg")}
           alt={site.brandName}
           className="h-16 w-auto sm:h-20"
         />
