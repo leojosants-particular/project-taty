@@ -1,6 +1,6 @@
 import { motion } from "motion/react"
 import { Check } from "lucide-react"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { SectionTitle } from "@/components/shared/SectionTitle"
 import { WhatsAppButton } from "@/components/shared/WhatsAppButton"
 import { services } from "@/content/services"
@@ -25,7 +25,9 @@ export function Universos() {
             >
               <Card className="h-full">
                 <CardHeader>
-                  <CardTitle className="font-serif text-2xl">{s.title}</CardTitle>
+                  <h3 className="font-serif text-2xl leading-none font-semibold" data-slot="card-title">
+                    {s.title}
+                  </h3>
                   <p className="text-muted-foreground">{s.description}</p>
                 </CardHeader>
                 <CardContent className="flex h-full flex-col gap-4">
