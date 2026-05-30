@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" role="img" aria-label="Taty — beleza e doçura">
+  <!-- ícone: gota de esmalte + cereja (os dois mundos) -->
+  <g transform="translate(110 124)">
+    <!-- gota de esmalte (beleza) -->
+    <path d="M-34 -56 C -4 -16, -4 32, -34 32 C -64 32, -64 -16, -34 -56 Z" fill="#c97c6d"/>
+    <ellipse cx="-42" cy="2" rx="7" ry="16" fill="#ffffff" opacity="0.25"/>
+    <!-- cereja (doçura) -->
+    <circle cx="26" cy="22" r="28" fill="#b3261e"/>
+    <circle cx="18" cy="14" r="6" fill="#ffffff" opacity="0.35"/>
+    <path d="M26 -6 C 34 -34, 54 -44, 66 -48" fill="none" stroke="#7a4a36" stroke-width="4" stroke-linecap="round"/>
+    <!-- folhinha -->
+    <path d="M64 -48 q 18 -8 26 8 q -18 8 -26 -8z" fill="#8aa06a"/>
+  </g>
+  <!-- nome -->
+  <text x="200" y="142" font-family="'Fraunces', Georgia, serif" font-size="96" font-weight="600" fill="#3a2e2a">Taty</text>
+  <text x="206" y="176" font-family="'Inter', sans-serif" font-size="18" letter-spacing="3" fill="#6b5d57">beleza &amp; doçura</text>
+</svg>

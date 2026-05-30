@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" role="img" aria-label="Atelier Taty">
+  <!-- selo / monograma -->
+  <g transform="translate(120 120)">
+    <circle r="86" fill="none" stroke="#c97c6d" stroke-width="3"/>
+    <circle r="74" fill="none" stroke="#c9a24b" stroke-width="1.5" stroke-dasharray="2 7"/>
+    <text x="0" y="34" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="96" font-weight="600" fill="#c97c6d">T</text>
+    <!-- gota de esmalte -->
+    <path d="M-2 -54 C 10 -36, 10 -22, -2 -22 C -14 -22, -14 -36, -2 -54 Z" fill="#c9a24b"/>
+    <!-- folhinha -->
+    <path d="M44 40 q 16 -8 24 6 q -16 8 -24 -6z" fill="#8aa06a"/>
+  </g>
+  <!-- nome -->
+  <text x="240" y="116" font-family="'Fraunces', Georgia, serif" font-size="56" font-weight="600" fill="#3a2e2a">Atelier Taty</text>
+  <text x="243" y="150" font-family="'Inter', sans-serif" font-size="18" letter-spacing="5" fill="#6b5d57">BELEZA &amp; DOÇURA</text>
+</svg>

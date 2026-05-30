@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logos — Atelier Taty (conceitos)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root { --cream: #fdf8f4; --dark: #3a2e2a; }
+      * { box-sizing: border-box; }
+      body { margin: 0; font-family: "Inter", sans-serif; background: var(--cream); color: var(--dark); }
+      header { padding: 32px 24px 8px; text-align: center; }
+      header h1 { font-family: "Fraunces", serif; color: #c97c6d; margin: 0 0 4px; }
+      header p { color: #6b5d57; margin: 0; }
+      .grid { max-width: 1000px; margin: 24px auto 64px; padding: 0 24px; display: grid; gap: 24px; }
+      .card { border: 1px solid #ecdcd4; border-radius: 20px; overflow: hidden; background: #fff; }
+      .card h2 { font-family: "Fraunces", serif; font-size: 18px; margin: 0; padding: 16px 20px; border-bottom: 1px solid #ecdcd4; }
+      .swatches { display: grid; grid-template-columns: 1fr 1fr; }
+      .swatch { display: flex; align-items: center; justify-content: center; padding: 36px 20px; min-height: 180px; }
+      .on-cream { background: var(--cream); }
+      .on-dark { background: var(--dark); }
+      .swatch img { width: 100%; max-width: 360px; height: auto; }
+      .tag { font-size: 12px; color: #6b5d57; padding: 4px 20px 16px; }
+      @media (min-width: 720px) { .swatch { min-height: 200px; } }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Conceitos de logo — Taty</h1>
+      <p>Três direções em SVG (vetorial). Veja em fundo claro e escuro.</p>
+    </header>
+
+    <div class="grid">
+      <div class="card">
+        <h2>A · Wordmark elegante</h2>
+        <div class="swatches">
+          <div class="swatch on-cream"><img src="/logo/concept-a-wordmark.svg" alt="Conceito A em fundo claro" /></div>
+          <div class="swatch on-dark"><img src="/logo/concept-a-wordmark.svg" alt="Conceito A em fundo escuro" /></div>
+        </div>
+        <p class="tag">Nome em destaque, brilho dourado, minimalista e versátil.</p>
+      </div>
+
+      <div class="card">
+        <h2>B · Monograma em selo</h2>
+        <div class="swatches">
+          <div class="swatch on-cream"><img src="/logo/concept-b-selo.svg" alt="Conceito B em fundo claro" /></div>
+          <div class="swatch on-dark"><img src="/logo/concept-b-selo.svg" alt="Conceito B em fundo escuro" /></div>
+        </div>
+        <p class="tag">Selo com “T”, gota de esmalte e folhinha. Cara de marca/carimbo.</p>
+      </div>
+
+      <div class="card">
+        <h2>C · Ícone dos dois mundos</h2>
+        <div class="swatches">
+          <div class="swatch on-cream"><img src="/logo/concept-c-icone.svg" alt="Conceito C em fundo claro" /></div>
+          <div class="swatch on-dark"><img src="/logo/concept-c-icone.svg" alt="Conceito C em fundo escuro" /></div>
+        </div>
+        <p class="tag">Gota de esmalte + cereja: une beleza e doçura. Lúdico e afetivo.</p>
+      </div>
+    </div>
+  </body>
+</html>
