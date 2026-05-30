@@ -3,10 +3,10 @@ import { describe, it, expect } from "vitest"
 import App from "./App"
 
 describe("App", () => {
-  it("renderiza o nome da marca", () => {
+  it("monta as seções principais (hero, serviços, contato)", () => {
     render(<App />)
-    expect(
-      screen.getByRole("heading", { name: /lp taty/i }),
-    ).toBeInTheDocument()
+    expect(screen.getByRole("heading", { level: 1 })).toBeInTheDocument()
+    expect(document.querySelector("#servicos")).not.toBeNull()
+    expect(document.querySelector("#contato")).not.toBeNull()
   })
 })

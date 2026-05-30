@@ -1,14 +1,30 @@
+import { Header } from "@/components/layout/Header"
+import { Footer } from "@/components/layout/Footer"
+import { Hero } from "@/components/sections/Hero"
+import { Sobre } from "@/components/sections/Sobre"
+import { Universos } from "@/components/sections/Universos"
+import { Galeria } from "@/components/sections/Galeria"
+import { ComoFunciona } from "@/components/sections/ComoFunciona"
+import { Depoimentos } from "@/components/sections/Depoimentos"
+import { Contato } from "@/components/sections/Contato"
+import { ScrollToTop } from "@/components/shared/ScrollToTop"
+
 function App() {
   return (
-    <main className="flex min-h-svh flex-col items-center justify-center gap-4 p-8 text-center">
-      <h1 className="font-serif text-4xl font-semibold text-primary">
-        LP Taty
-      </h1>
-      <p className="max-w-md text-muted-foreground">
-        Beleza & Doçura — base do projeto pronta. As seções da landing page
-        serão construídas conforme o plano de implementação.
-      </p>
-    </main>
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <Sobre />
+        <Universos />
+        <Galeria />
+        <ComoFunciona />
+        <Depoimentos />
+        <Contato />
+      </main>
+      <Footer />
+      <ScrollToTop />
+    </>
   )
 }
 

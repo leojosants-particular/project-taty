@@ -45,9 +45,9 @@ TDD é obrigatório no projeto (unidade, integração e E2E). Acessibilidade (co
 - [x] Fundação do projeto (Vite + React + TS + Tailwind v4 + shadcn + testes)
 - [x] Plano de implementação (`docs/superpowers/plans/`)
 - [x] Camada de conteúdo + helper de WhatsApp
-- [ ] Agendamento rápido (RHF + Zod)
-- [ ] Layout (Header/Footer) e seções da página
-- [ ] Galeria com filtro
+- [x] Agendamento rápido (RHF + Zod)
+- [x] Layout (Header/Footer) e seções da página
+- [x] Galeria com filtro
 - [ ] SEO, acessibilidade e deploy
 
 ## 📄 Documentação
