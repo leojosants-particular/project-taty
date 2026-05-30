@@ -28,5 +28,11 @@ describe("BookingForm", () => {
     const url = openSpy.mock.calls[0][0] as string
     expect(url).toContain("https://wa.me/")
     expect(decodeURIComponent(url)).toContain("Ana")
+    expect(openSpy).toHaveBeenCalledWith(
+      expect.stringContaining("https://wa.me/"),
+      "_blank",
+      "noopener,noreferrer",
+    )
+    expect(decodeURIComponent(url)).toContain("Sábado de manhã")
   })
 })

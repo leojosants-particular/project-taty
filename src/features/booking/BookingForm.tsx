@@ -26,8 +26,8 @@ export function BookingForm() {
     <form onSubmit={handleSubmit(onSubmit)} className="mx-auto grid max-w-md gap-4" noValidate>
       <div className="grid gap-1.5 text-left">
         <Label htmlFor="name">Seu nome</Label>
-        <Input id="name" {...register("name")} aria-invalid={!!errors.name} />
-        {errors.name && <p className="text-sm text-destructive">{errors.name.message}</p>}
+        <Input id="name" {...register("name")} aria-invalid={!!errors.name} aria-describedby={errors.name ? "name-error" : undefined} />
+        {errors.name && <p id="name-error" role="alert" className="text-sm text-destructive">{errors.name.message}</p>}
       </div>
 
       <div className="grid gap-1.5 text-left">
@@ -36,17 +36,19 @@ export function BookingForm() {
           id="service"
           {...register("service")}
           className="h-9 rounded-md border border-input bg-transparent px-3 text-sm"
+          aria-invalid={!!errors.service}
+          aria-describedby={errors.service ? "service-error" : undefined}
         >
           <option value="beleza">Beleza (unhas)</option>
           <option value="confeitaria">Confeitaria (doces)</option>
         </select>
-        {errors.service && <p className="text-sm text-destructive">{errors.service.message}</p>}
+        {errors.service && <p id="service-error" role="alert" className="text-sm text-destructive">{errors.service.message}</p>}
       </div>
 
       <div className="grid gap-1.5 text-left">
         <Label htmlFor="preference">Preferência de data/horário</Label>
-        <Input id="preference" {...register("preference")} aria-invalid={!!errors.preference} />
-        {errors.preference && <p className="text-sm text-destructive">{errors.preference.message}</p>}
+        <Input id="preference" {...register("preference")} aria-invalid={!!errors.preference} aria-describedby={errors.preference ? "preference-error" : undefined} />
+        {errors.preference && <p id="preference-error" role="alert" className="text-sm text-destructive">{errors.preference.message}</p>}
       </div>
 
       <Button type="submit" size="lg">Enviar pelo WhatsApp</Button>
