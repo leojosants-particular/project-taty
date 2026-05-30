@@ -8,6 +8,7 @@ describe("WhatsAppButton", () => {
     const link = screen.getByRole("link", { name: /falar no whatsapp/i })
     expect(link).toHaveAttribute("href", expect.stringContaining("https://wa.me/"))
     expect(link).toHaveAttribute("href", expect.stringContaining("text="))
+    expect(link).toHaveAttribute("href", expect.stringContaining(encodeURIComponent("Oi, Taty!")))
     expect(link).toHaveAttribute("target", "_blank")
     expect(link).toHaveAttribute("rel", expect.stringContaining("noopener"))
   })
