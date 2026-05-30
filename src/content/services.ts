@@ -9,7 +9,8 @@ export const services: Service[] = [
       "Mãos e pés bem cuidados, com capricho e higiene. Esmaltação caprichada que dura.",
     items: ["Manicure", "Pedicure", "Esmaltação em gel", "Spa dos pés"],
     ctaLabel: "Agendar unhas",
-    whatsappMessage: "Oi, Taty! Gostaria de agendar um horário para as unhas.",
+    whatsappMessage:
+      "Oi, Taty! 😊 Vim pelo seu site e gostaria de agendar um horário para as unhas (manicure/pedicure). Quais dias e horários você tem disponíveis?",
   },
   {
     id: "confeitaria",
@@ -19,6 +20,7 @@ export const services: Service[] = [
       "Doces feitos à mão, com carinho, para adoçar seus momentos especiais.",
     items: ["Bolos", "Doces para festa", "Encomendas personalizadas"],
     ctaLabel: "Encomendar doces",
-    whatsappMessage: "Oi, Taty! Gostaria de fazer uma encomenda de doces.",
+    whatsappMessage:
+      "Oi, Taty! 😊 Vim pelo seu site e gostaria de fazer uma encomenda de doces. Podemos combinar os detalhes (data, quantidade e sabores)?",
   },
 ]

@@ -40,7 +40,10 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.15 }}
         >
-          <WhatsAppButton message={`Oi, ${site.brandName}! Vim pelo site e quero saber mais.`} size="lg">
+          <WhatsAppButton
+            message="Oi, Taty! 😊 Vim pelo seu site e gostaria de saber mais sobre os seus serviços de beleza e confeitaria."
+            size="lg"
+          >
             Falar no WhatsApp
           </WhatsAppButton>
         </motion.div>

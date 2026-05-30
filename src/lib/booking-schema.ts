@@ -15,8 +15,9 @@ const SERVICE_LABEL: Record<BookingForm["service"], string> = {
 
 export function buildBookingMessage(data: BookingForm): string {
   return [
-    `Oi, Taty! Meu nome é ${data.name}.`,
-    `Tenho interesse em: ${SERVICE_LABEL[data.service]}.`,
-    `Preferência de data/horário: ${data.preference}.`,
+    `Oi, Taty! 😊 Vim pelo seu site.`,
+    `Meu nome é ${data.name} e tenho interesse em ${SERVICE_LABEL[data.service]}.`,
+    `Minha preferência de data/horário é: ${data.preference}.`,
+    `Pode me ajudar?`,
   ].join(" ")
 }

@@ -28,7 +28,7 @@ export function Header() {
         </nav>
 
         <div className="hidden md:block">
-          <WhatsAppButton message={`Oi, ${site.brandName}! Vim pelo site.`} size="sm">
+          <WhatsAppButton message="Oi, Taty! 😊 Vim pelo seu site e gostaria de saber mais." size="sm">
             Falar no WhatsApp
           </WhatsAppButton>
         </div>
@@ -51,7 +51,7 @@ export function Header() {
               ))}
             </nav>
             <div className="mt-6">
-              <WhatsAppButton message={`Oi, ${site.brandName}! Vim pelo site.`} className="w-full">
+              <WhatsAppButton message="Oi, Taty! 😊 Vim pelo seu site e gostaria de saber mais." className="w-full">
                 Falar no WhatsApp
               </WhatsAppButton>
             </div>
