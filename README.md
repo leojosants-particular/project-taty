@@ -48,7 +48,9 @@ TDD é obrigatório no projeto (unidade, integração e E2E). Acessibilidade (co
 - [x] Agendamento rápido (RHF + Zod)
 - [x] Layout (Header/Footer) e seções da página
 - [x] Galeria com filtro
-- [ ] SEO, acessibilidade e deploy
+- [x] SEO, acessibilidade e deploy
+
+> A LP está feature-complete. Para publicar: importe o repositório no [Vercel](https://vercel.com) — o `vercel.json` na raiz configura o build (`pnpm build`), o diretório de saída (`dist`) e as rewrites para SPA automaticamente.
 
 ## 📄 Documentação
 
