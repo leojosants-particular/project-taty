@@ -3,6 +3,7 @@ import { site } from "./site"
 import { services } from "./services"
 import { gallery } from "./gallery"
 import { howItWorks } from "./how-it-works"
+import { testimonials } from "./testimonials"
 
 describe("camada de conteúdo", () => {
   it("site tem whatsapp só com dígitos e instagram", () => {
@@ -21,6 +22,14 @@ describe("camada de conteúdo", () => {
     for (const item of gallery) {
       expect(item.alt.trim().length).toBeGreaterThan(0)
       expect(["unhas", "doces"]).toContain(item.category)
+    }
+  })
+
+  it("depoimentos referenciam categorias válidas e têm texto", () => {
+    expect(testimonials.length).toBeGreaterThan(0)
+    for (const t of testimonials) {
+      expect(["beleza", "confeitaria"]).toContain(t.service)
+      expect(t.text.trim().length).toBeGreaterThan(0)
     }
   })
 
