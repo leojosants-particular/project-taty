@@ -4,9 +4,9 @@ import { Header } from "./Header"
 import { site } from "@/content/site"
 
 describe("Header", () => {
-  it("mostra a marca e um link para Contato", () => {
+  it("mostra a marca (logo) e um link para Contato", () => {
     render(<Header />)
-    expect(screen.getAllByText(site.brandName).length).toBeGreaterThan(0)
+    expect(screen.getAllByAltText(site.brandName).length).toBeGreaterThan(0)
     const contato = screen.getAllByRole("link", { name: /contato/i })
     expect(contato.some((a) => a.getAttribute("href") === "#contato")).toBe(true)
   })

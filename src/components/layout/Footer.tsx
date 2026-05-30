@@ -6,7 +6,11 @@ export function Footer() {
   return (
     <footer className="border-t border-border bg-muted/40">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-8 text-center text-sm text-muted-foreground md:flex-row md:justify-between md:gap-6 md:text-left">
-        <span className="font-serif text-lg text-primary">{site.brandName}</span>
+        <img
+          src="/logo/logo-wordmark-compact.svg"
+          alt={site.brandName}
+          className="h-12 w-auto"
+        />
 
         <a
           href={site.instagram.url}

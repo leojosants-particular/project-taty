@@ -21,9 +21,12 @@ export function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.05 }}
-          className="font-serif text-4xl font-semibold text-foreground sm:text-6xl"
         >
-          {site.brandName}
+          <img
+            src="/logo/logo-wordmark.svg"
+            alt={site.brandName}
+            className="mx-auto h-auto w-72 sm:w-md"
+          />
         </motion.h1>
 
         <motion.p

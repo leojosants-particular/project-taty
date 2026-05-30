@@ -14,9 +14,13 @@ const NAV = [
 export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-        <a href="#inicio" className="font-serif text-xl font-semibold text-primary">
-          {site.brandName}
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-2">
+        <a href="#inicio" aria-label={site.brandName}>
+          <img
+            src="/logo/logo-wordmark-compact.svg"
+            alt={site.brandName}
+            className="h-16 w-auto sm:h-20"
+          />
         </a>
 
         <nav aria-label="Principal" className="hidden items-center gap-6 md:flex">
@@ -40,7 +44,13 @@ export function Header() {
             </Button>
           </SheetTrigger>
           <SheetContent side="right" className="w-72 p-6">
-            <SheetTitle className="font-serif text-lg text-primary pr-8">{site.brandName}</SheetTitle>
+            <SheetTitle className="pr-8">
+              <img
+                src="/logo/logo-wordmark-compact.svg"
+                alt={site.brandName}
+                className="h-16 w-auto"
+              />
+            </SheetTitle>
             <nav aria-label="Mobile" className="mt-6 flex flex-col gap-4">
               {NAV.map((item) => (
                 <SheetClose asChild key={item.href}>

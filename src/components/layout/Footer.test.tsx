@@ -8,7 +8,7 @@ describe("Footer", () => {
   it("mostra a marca, o Instagram e o crédito do desenvolvedor", () => {
     render(<Footer />)
 
-    expect(screen.getAllByText(site.brandName).length).toBeGreaterThan(0)
+    expect(screen.getAllByAltText(site.brandName).length).toBeGreaterThan(0)
 
     const ig = screen.getByRole("link", {
       name: new RegExp(site.instagram.handle, "i"),

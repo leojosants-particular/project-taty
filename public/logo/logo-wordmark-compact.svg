@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 210" role="img" aria-label="Atelier Taty">
+  <path d="M300 34 l6 15 15 6 -15 6 -6 15 -6 -15 -15 -6 15 -6z" fill="#c9a24b"/>
+  <text x="300" y="94" text-anchor="middle" font-family="'Inter', sans-serif" font-size="22" letter-spacing="12" fill="#c9a24b">ATELIER</text>
+  <text x="300" y="184" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="104" font-weight="600" fill="#c97c6d">Taty</text>
+</svg>
