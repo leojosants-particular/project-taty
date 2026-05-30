@@ -8,7 +8,7 @@ export function Hero() {
     <section id="inicio" className="relative overflow-hidden bg-secondary/30">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-4 py-20 text-center sm:py-28">
         <motion.span
-          initial={{ opacity: 0, y: 8 }}
+          initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
           className="inline-flex items-center gap-2 rounded-full bg-background px-4 py-1.5 text-sm text-muted-foreground shadow-sm"
@@ -18,7 +18,7 @@ export function Hero() {
         </motion.span>
 
         <motion.h1
-          initial={{ opacity: 0, y: 12 }}
+          initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.05 }}
           className="font-serif text-4xl font-semibold text-foreground sm:text-6xl"
@@ -27,7 +27,7 @@ export function Hero() {
         </motion.h1>
 
         <motion.p
-          initial={{ opacity: 0, y: 12 }}
+          initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
           className="max-w-xl text-lg text-foreground/80"
@@ -36,7 +36,7 @@ export function Hero() {
         </motion.p>
 
         <motion.div
-          initial={{ opacity: 0, y: 12 }}
+          initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.15 }}
         >

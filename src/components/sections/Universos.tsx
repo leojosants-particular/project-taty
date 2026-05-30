@@ -18,10 +18,10 @@ export function Universos() {
           {services.map((s, i) => (
             <motion.div
               key={s.id}
-              initial={{ opacity: 0, y: 16 }}
+              initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.4, delay: i * 0.05 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.5, delay: i * 0.08, ease: "easeOut" }}
             >
               <Card className="h-full">
                 <CardHeader>
