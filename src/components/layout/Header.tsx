@@ -29,7 +29,7 @@ export function Header() {
 
         <div className="hidden md:block">
           <WhatsAppButton message={`Oi, ${site.brandName}! Vim pelo site.`} size="sm">
-            WhatsApp
+            Falar no WhatsApp
           </WhatsAppButton>
         </div>
 

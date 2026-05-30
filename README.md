@@ -56,6 +56,13 @@ TDD é obrigatório no projeto (unidade, integração e E2E). Acessibilidade (co
 
 - Design: [docs/superpowers/specs/2026-05-30-lp-taty-design.md](docs/superpowers/specs/2026-05-30-lp-taty-design.md)
 
+## ✅ Antes de publicar
+
+- Substituir `whatsapp` e `instagram.url` em `src/content/site.ts` pelos dados reais da cliente.
+- Adicionar `public/og-image.jpg` (1200×630) para o preview ao compartilhar.
+- Adicionar as fotos reais em `public/gallery/` (referenciadas em `src/content/gallery.ts`).
+- Completar o JSON-LD em `index.html` com `telephone` e `url` quando os dados reais existirem.
+
 ---
 
 Feito com carinho. 💅🍰

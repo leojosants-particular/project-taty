@@ -1,3 +1,4 @@
+import { MotionConfig } from "motion/react"
 import { Header } from "@/components/layout/Header"
 import { Footer } from "@/components/layout/Footer"
 import { Hero } from "@/components/sections/Hero"
@@ -11,7 +12,7 @@ import { ScrollToTop } from "@/components/shared/ScrollToTop"
 
 function App() {
   return (
-    <>
+    <MotionConfig reducedMotion="user">
       <Header />
       <main>
         <Hero />
@@ -24,7 +25,7 @@ function App() {
       </main>
       <Footer />
       <ScrollToTop />
-    </>
+    </MotionConfig>
   )
 }
 
