@@ -27,13 +27,15 @@ Uma landing page única, responsiva e mobile-first, que apresenta os dois talent
 
 ```bash
 pnpm install      # instala dependências
-pnpm dev          # ambiente de desenvolvimento
-pnpm build        # build de produção
-pnpm preview      # pré-visualiza o build
+pnpm dev          # ambiente de desenvolvimento (hot-reload) -> http://localhost:5173
+pnpm build        # build de produção (só compila — não abre nada)
+pnpm preview      # serve o build de produção -> http://localhost:4173 (precisa de build antes)
 pnpm test         # testes de unidade/integração (watch)
 pnpm test:run     # testes uma vez (CI)
 pnpm e2e          # testes end-to-end (Playwright)
 ```
+
+> **Fluxo de teste local:** no dia a dia, use **`pnpm dev`** e abra `http://localhost:5173` — ele reflete o código-fonte na hora, sem precisar de build. O `pnpm build` serve só para checar a compilação ou preparar o deploy. Para testar o resultado **de produção** (minificado), rode `pnpm build && pnpm preview` e abra `http://localhost:4173`.
 
 ## 🧪 Qualidade
 

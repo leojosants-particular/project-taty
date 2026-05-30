@@ -9,12 +9,15 @@ Vite + React 19 + TS · Tailwind v4 · shadcn/ui · `motion` · react-hook-form 
 ## Comandos
 
 ```bash
-pnpm dev          # desenvolvimento
+pnpm dev          # servidor de desenvolvimento (hot-reload) -> http://localhost:5173
 pnpm test:run     # testes unidade/integração (uma vez)
 pnpm e2e          # testes E2E (Playwright)
 pnpm lint         # ESLint (+ jsx-a11y)
-pnpm build        # build de produção (tsc + vite)
+pnpm build        # build de produção (tsc + vite) — só COMPILA, não abre nada
+pnpm preview      # serve o dist/ buildado -> http://localhost:4173 (precisa de build antes)
 ```
+
+**Fluxo de teste local:** para ver/testar o site no dia a dia, use **`pnpm dev`** (reflete o código-fonte na hora). `pnpm build` é só checagem de compilação/deploy — não é preciso buildar para testar. Para validar o resultado de produção, `pnpm build && pnpm preview`.
 
 ## Regras do projeto (obrigatórias)
 
