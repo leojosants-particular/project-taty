@@ -11,8 +11,11 @@ import { Contato } from "@/components/sections/Contato"
 import { ScrollToTop } from "@/components/shared/ScrollToTop"
 
 function App() {
+  // reducedMotion="never": anima sempre (decisão de produto), ignorando a
+  // preferência "reduzir movimento" do SO/navegador. Trocar por "user" para
+  // voltar a respeitar a preferência de acessibilidade.
   return (
-    <MotionConfig reducedMotion="user">
+    <MotionConfig reducedMotion="never">
       <Header />
       <main>
         <Hero />

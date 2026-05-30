@@ -23,7 +23,7 @@ pnpm preview      # serve o dist/ buildado -> http://localhost:4173 (precisa de 
 
 - **pnpm** sempre — nunca npm/yarn.
 - **TDD obrigatório** (unidade, integração e E2E quando pertinente): teste vermelho → mínimo → verde → refatora.
-- **Mobile-first** e **acessibilidade AA** (HTML semântico, aria, foco, `prefers-reduced-motion`).
+- **Mobile-first** e **acessibilidade AA** (HTML semântico, aria, foco). Obs: animações tocam sempre por decisão de produto (`<MotionConfig reducedMotion="never">` no App) — não honram `prefers-reduced-motion`.
 - **Sem DB:** todo conteúdo em `src/content/*.ts` tipados.
 - `noUnusedLocals: true` — imports sem uso quebram o build.
 - **README é vivo:** atualize a seção "Andamento" ao concluir algo.

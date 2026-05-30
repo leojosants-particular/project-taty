@@ -9,9 +9,8 @@ interface RevealProps {
 }
 
 /**
- * Revela o conteúdo ao entrar na viewport: fade + leve subida.
- * Anima uma vez. Respeita "reduzir movimento" via <MotionConfig reducedMotion="user">
- * (o deslocamento é suprimido; o fade permanece).
+ * Revela o conteúdo ao entrar na viewport: fade + leve subida. Anima uma vez.
+ * O movimento toca sempre — o App usa <MotionConfig reducedMotion="never">.
  */
 export function Reveal({ children, className, delay = 0 }: RevealProps) {
   return (
