@@ -1,14 +1,8 @@
 import { useState } from "react"
 import { motion } from "motion/react"
-import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import { SectionTitle } from "@/components/shared/SectionTitle"
 import { gallery } from "@/content/gallery"
 import type { GalleryCategory } from "@/content/types"
-
-// Suppress unused import warnings — ToggleGroup/ToggleGroupItem are kept for
-// the shadcn requirement but we use plain buttons so tests can find role="button".
-void ToggleGroup
-void ToggleGroupItem
 
 type Filter = "todos" | GalleryCategory
 
