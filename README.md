@@ -58,12 +58,13 @@ TDD é obrigatório no projeto (unidade, integração e E2E). Acessibilidade (co
 
 ## ✅ Antes de publicar
 
-- [x] WhatsApp e Instagram reais — configurados via variáveis de ambiente (`.env`, prefixo `VITE_`) e lidos em `src/content/site.ts`. No deploy (Vercel), defina `VITE_WHATSAPP`, `VITE_INSTAGRAM_URL` e `VITE_INSTAGRAM_HANDLE` no painel de Environment Variables.
+- [x] WhatsApp e Instagram reais — via variáveis de ambiente (`.env`, prefixo `VITE_`) lidas em `src/content/site.ts`.
+- [x] `telephone` + `sameAs` (Instagram) no JSON-LD de `index.html`.
+- [ ] **Trocar as imagens demo da galeria por fotos reais** — hoje há placeholders ilustrativos (SVG) em `public/gallery/` só para visualização; substituir pelos trabalhos reais (e atualizar `src/content/gallery.ts` se mudar de formato).
 - [ ] Adicionar `public/og-image.jpg` (1200×630) para o preview ao compartilhar.
-- [ ] Adicionar as fotos reais em `public/gallery/` (referenciadas em `src/content/gallery.ts`).
-- [ ] Completar o JSON-LD em `index.html` com `telephone` e `url`.
+- [ ] Completar o JSON-LD com `url` quando houver o domínio publicado.
 
-> **Contato em variáveis de ambiente:** os dados ficam em `.env` (versionado, pois são públicos) — veja `.env.example`. Para trocar o número/perfil, edite o `.env` ou defina as variáveis no host.
+> **Contato em variáveis de ambiente:** `.env` **não é versionado** (veja `.env.example`). Em desenvolvimento, mantenha um `.env` local; no deploy (Vercel), defina `VITE_WHATSAPP`, `VITE_INSTAGRAM_URL` e `VITE_INSTAGRAM_HANDLE` no painel de Environment Variables.
 
 ---
 
