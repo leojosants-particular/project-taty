@@ -39,8 +39,8 @@ export function Header() {
               <Menu className="size-5" aria-hidden="true" />
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-72">
-            <SheetTitle className="font-serif text-lg text-primary">{site.brandName}</SheetTitle>
+          <SheetContent side="right" className="w-72 p-6">
+            <SheetTitle className="font-serif text-lg text-primary pr-8">{site.brandName}</SheetTitle>
             <nav aria-label="Mobile" className="mt-6 flex flex-col gap-4">
               {NAV.map((item) => (
                 <SheetClose asChild key={item.href}>

@@ -58,10 +58,12 @@ TDD é obrigatório no projeto (unidade, integração e E2E). Acessibilidade (co
 
 ## ✅ Antes de publicar
 
-- Substituir `whatsapp` e `instagram.url` em `src/content/site.ts` pelos dados reais da cliente.
-- Adicionar `public/og-image.jpg` (1200×630) para o preview ao compartilhar.
-- Adicionar as fotos reais em `public/gallery/` (referenciadas em `src/content/gallery.ts`).
-- Completar o JSON-LD em `index.html` com `telephone` e `url` quando os dados reais existirem.
+- [x] WhatsApp e Instagram reais — configurados via variáveis de ambiente (`.env`, prefixo `VITE_`) e lidos em `src/content/site.ts`. No deploy (Vercel), defina `VITE_WHATSAPP`, `VITE_INSTAGRAM_URL` e `VITE_INSTAGRAM_HANDLE` no painel de Environment Variables.
+- [ ] Adicionar `public/og-image.jpg` (1200×630) para o preview ao compartilhar.
+- [ ] Adicionar as fotos reais em `public/gallery/` (referenciadas em `src/content/gallery.ts`).
+- [ ] Completar o JSON-LD em `index.html` com `telephone` e `url`.
+
+> **Contato em variáveis de ambiente:** os dados ficam em `.env` (versionado, pois são públicos) — veja `.env.example`. Para trocar o número/perfil, edite o `.env` ou defina as variáveis no host.
 
 ---
 
