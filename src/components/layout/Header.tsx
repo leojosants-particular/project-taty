@@ -19,7 +19,7 @@ export function Header() {
           <img
             src="/logo/logo-wordmark-compact.svg"
             alt={site.brandName}
-            className="h-16 w-auto sm:h-20"
+            className="h-20 w-auto sm:h-24"
           />
         </a>
 
@@ -48,7 +48,7 @@ export function Header() {
               <img
                 src="/logo/logo-wordmark-compact.svg"
                 alt={site.brandName}
-                className="h-16 w-auto"
+                className="h-20 w-auto"
               />
             </SheetTitle>
             <nav aria-label="Mobile" className="mt-6 flex flex-col gap-4">

@@ -4,6 +4,7 @@ export type GalleryCategory = "unhas" | "doces"
 export interface SiteInfo {
   brandName: string
   tagline: string
+  heroSubtitle: string
   whatsapp: string // só dígitos, ex: "5511999999999"
   instagram: { handle: string; url: string }
   region: string

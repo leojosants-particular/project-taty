@@ -9,7 +9,7 @@ export function Footer() {
         <img
           src="/logo/logo-wordmark-compact.svg"
           alt={site.brandName}
-          className="h-12 w-auto"
+          className="h-16 w-auto sm:h-20"
         />
 
         <a

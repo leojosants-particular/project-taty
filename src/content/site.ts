@@ -7,6 +7,8 @@ const env = import.meta.env
 export const site: SiteInfo = {
   brandName: "Atelier Taty",
   tagline: "Beleza nas unhas, doçura na mesa.",
+  heroSubtitle:
+    "Manicure, pedicure e doces artesanais — atendimento em casa, com hora marcada.",
   whatsapp: env.VITE_WHATSAPP ?? "5511999999999",
   instagram: {
     handle: env.VITE_INSTAGRAM_HANDLE ?? "@ateliertaty",

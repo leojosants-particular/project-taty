@@ -4,9 +4,9 @@ import { Hero } from "./Hero"
 import { site } from "@/content/site"
 
 describe("Hero", () => {
-  it("mostra a tagline e um CTA de WhatsApp", () => {
+  it("mostra a frase de apoio e um CTA de WhatsApp", () => {
     render(<Hero />)
-    expect(screen.getByText(site.tagline)).toBeInTheDocument()
+    expect(screen.getByText(site.heroSubtitle)).toBeInTheDocument()
     const cta = screen.getByRole("link", { name: /whatsapp/i })
     expect(cta).toHaveAttribute("href", expect.stringContaining("https://wa.me/"))
   })

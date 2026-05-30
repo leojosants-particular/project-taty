@@ -25,7 +25,7 @@ export function Hero() {
           <img
             src="/logo/logo-wordmark.svg"
             alt={site.brandName}
-            className="mx-auto h-auto w-72 sm:w-md"
+            className="mx-auto h-auto w-80 sm:w-lg"
           />
         </motion.h1>
 
@@ -35,7 +35,7 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="max-w-xl text-lg text-foreground/80"
         >
-          {site.tagline}
+          {site.heroSubtitle}
         </motion.p>
 
         <motion.div
