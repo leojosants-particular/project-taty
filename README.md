@@ -69,5 +69,3 @@ TDD é obrigatório no projeto (unidade, integração e E2E). Acessibilidade (co
 > **Contato em variáveis de ambiente:** `.env` **não é versionado** (veja `.env.example`). Em desenvolvimento, mantenha um `.env` local; no deploy (Vercel), defina `VITE_WHATSAPP`, `VITE_INSTAGRAM_URL` e `VITE_INSTAGRAM_HANDLE` no painel de Environment Variables.
 
 ---
-
-Feito com carinho. 💅🍰
