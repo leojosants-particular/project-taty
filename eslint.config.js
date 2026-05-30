@@ -21,4 +21,12 @@ export default defineConfig([
       globals: globals.browser,
     },
   },
+  {
+    // Arquivos vendados do shadcn/ui exportam variantes/hooks junto com
+    // componentes; a regra de Fast Refresh não se aplica a eles.
+    files: ['src/components/ui/**/*.{ts,tsx}'],
+    rules: {
+      'react-refresh/only-export-components': 'off',
+    },
+  },
 ])
