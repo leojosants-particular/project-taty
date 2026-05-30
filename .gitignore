@@ -12,6 +12,11 @@ dist
 dist-ssr
 *.local
 
+# Variáveis de ambiente (use .env.example como template; defina as VITE_* no host)
+.env
+.env.*
+!.env.example
+
 # Testes / cobertura / e2e
 coverage
 playwright-report

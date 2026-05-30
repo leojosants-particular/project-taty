@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bd2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#efd9c4"/>
+      <stop offset="1" stop-color="#fbeee8"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bd2)"/>
+  <!-- bandeja de doces (brigadeiros) -->
+  <g transform="translate(200 210)">
+    <ellipse cx="0" cy="40" rx="140" ry="46" fill="#e7cbb0"/>
+    <ellipse cx="0" cy="30" rx="140" ry="40" fill="#f6e7d6"/>
+    <g>
+      <circle cx="-78" cy="18" r="26" fill="#5a3b2e"/>
+      <circle cx="-18" cy="30" r="28" fill="#7a4a36"/>
+      <circle cx="46" cy="20" r="26" fill="#5a3b2e"/>
+      <circle cx="96" cy="34" r="22" fill="#7a4a36"/>
+      <circle cx="-50" cy="-14" r="22" fill="#c97c6d"/>
+      <circle cx="18" cy="-12" r="24" fill="#7a4a36"/>
+    </g>
+    <g fill="#fdf8f4">
+      <circle cx="-78" cy="18" r="3"/><circle cx="-18" cy="30" r="3"/>
+      <circle cx="46" cy="20" r="3"/><circle cx="18" cy="-12" r="3"/>
+    </g>
+  </g>
+  <text x="200" y="362" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#3a2e2a">Doces de festa</text>
+</svg>
